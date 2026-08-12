@@ -1,0 +1,239 @@
+/* ============================================================
+   Oracle Java Time Machine — Dark Theme
+   Accent: Java coffee-cup orange (#F0A03C / #FF8A1E)
+   ============================================================ */
+
+QWidget {
+    background-color: #14161A;
+    color: #E7E9EC;
+    font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", "Segoe UI", sans-serif;
+    font-size: 13px;
+}
+
+#CentralWidget {
+    background-color: #14161A;
+}
+
+/* ---------- Header ---------- */
+#TitleLabel {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#SubtitleLabel {
+    color: #8A9099;
+    font-size: 12px;
+}
+
+#HeaderLine {
+    background-color: #262A31;
+    max-height: 1px;
+    min-height: 1px;
+    border: none;
+}
+
+/* ---------- Group cards ---------- */
+QGroupBox {
+    background-color: #1B1E24;
+    border: 1px solid #2A2E36;
+    border-radius: 10px;
+    margin-top: 14px;
+    padding: 14px 12px 12px 12px;
+    font-weight: 600;
+    color: #C9CDD3;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 12px;
+    padding: 0 6px;
+    color: #FF9E3D;
+}
+
+QLabel {
+    color: #C9CDD3;
+    background: transparent;
+}
+
+QLabel#FieldLabel {
+    color: #9198A1;
+    font-size: 12px;
+}
+
+/* ---------- Inputs ---------- */
+QComboBox, QLineEdit {
+    background-color: #20242B;
+    border: 1px solid #33383F;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: #F0F1F3;
+    selection-background-color: #FF8A1E;
+}
+
+QComboBox:hover, QLineEdit:hover {
+    border: 1px solid #4A505A;
+}
+
+QComboBox:focus, QLineEdit:focus {
+    border: 1px solid #FF8A1E;
+}
+
+QComboBox:disabled, QLineEdit:disabled {
+    color: #565B63;
+    background-color: #1A1D22;
+    border: 1px solid #262A31;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 26px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #9198A1;
+    width: 0;
+    height: 0;
+    margin-right: 10px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #20242B;
+    border: 1px solid #33383F;
+    outline: none;
+    selection-background-color: #FF8A1E;
+    selection-color: #14161A;
+    padding: 4px;
+}
+
+/* ---------- Buttons ---------- */
+QPushButton {
+    background-color: #262A31;
+    border: 1px solid #363B43;
+    border-radius: 6px;
+    padding: 8px 16px;
+    color: #E7E9EC;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2E333B;
+    border: 1px solid #454B54;
+}
+
+QPushButton:pressed {
+    background-color: #1E2126;
+}
+
+QPushButton:disabled {
+    background-color: #1A1D22;
+    color: #565B63;
+    border: 1px solid #262A31;
+}
+
+/* Primary action button */
+QPushButton#DownloadButton {
+    background-color: #FF8A1E;
+    border: 1px solid #FF8A1E;
+    color: #1A1200;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+QPushButton#DownloadButton:hover {
+    background-color: #FFA347;
+    border: 1px solid #FFA347;
+}
+
+QPushButton#DownloadButton:pressed {
+    background-color: #E8790E;
+}
+
+QPushButton#DownloadButton:disabled {
+    background-color: #4A3A22;
+    color: #8A7754;
+    border: 1px solid #4A3A22;
+}
+
+QPushButton#PathButton {
+    padding: 7px 14px;
+}
+
+/* ---------- Log console ---------- */
+QTextEdit#LogArea {
+    background-color: #0E1013;
+    border: 1px solid #262A31;
+    border-radius: 8px;
+    color: #D6D9DD;
+    font-family: "Cascadia Mono", "Consolas", monospace;
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* ---------- Progress bar ---------- */
+QProgressBar {
+    background-color: #20242B;
+    border: 1px solid #33383F;
+    border-radius: 6px;
+    text-align: center;
+    color: #E7E9EC;
+    height: 18px;
+}
+
+QProgressBar::chunk {
+    background-color: #FF8A1E;
+    border-radius: 5px;
+}
+
+/* ---------- Status bar ---------- */
+#StatusLabel {
+    color: #8A9099;
+    font-size: 12px;
+    padding: 4px 2px;
+}
+
+/* ---------- Scrollbars ---------- */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #33383F;
+    border-radius: 5px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #454B54;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #33383F;
+    border-radius: 5px;
+    min-width: 24px;
+}
+
+/* ---------- Message boxes ---------- */
+QMessageBox {
+    background-color: #1B1E24;
+}
+
+QMessageBox QLabel {
+    color: #E7E9EC;
+}
